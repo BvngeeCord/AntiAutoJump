@@ -57,27 +57,4 @@ public class ControlsOptionsScreenMixin extends GameOptionsScreen {
         return (T) this.addChild(abstractButtonWidget);
     }
 
-    /*@Override()
-    public void init(){
-        this.addButton(new ButtonWidget(this.width / 2 - 75, 18, 150, 20, new TranslatableText("options.mouse_settings"), (buttonWidget) -> {
-            this.client.openScreen(new MouseOptionsScreen(this, this.gameOptions));
-        }));
-
-        this.keyBindingListWidget = new ControlsListWidget(((ControlsOptionsScreen) (Object) this), this.client);
-        this.children.add(this.keyBindingListWidget);
-        this.resetButton = (ButtonWidget)this.addButton(new ButtonWidget(this.width / 2 - 155, this.height - 29, 150, 20, new TranslatableText("controls.resetAll"), (buttonWidget) -> {
-            KeyBinding[] var2 = this.gameOptions.keysAll;
-            int var3 = var2.length;
-
-            for(int var4 = 0; var4 < var3; ++var4) {
-                KeyBinding keyBinding = var2[var4];
-                keyBinding.setBoundKey(keyBinding.getDefaultKey());
-            }
-
-            KeyBinding.updateKeysByCode();
-        }));
-        this.addButton(new ButtonWidget(this.width / 2 - 155 + 160, this.height - 29, 150, 20, ScreenTexts.DONE, (buttonWidget) -> {
-            this.client.openScreen(this.parent);
-        }));
-    }*/
 }
